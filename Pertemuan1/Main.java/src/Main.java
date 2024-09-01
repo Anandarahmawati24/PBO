@@ -48,6 +48,27 @@ public class Main {
         System.out.printf("Ganjil? " + isGanjil);
         System.out.println("Nama Pembuat : " + args[0]);
         System.out.println("Hasil angka Banyak : " + hasilAngkaBanyak);
+
+        // Contoh pemanggilan Class menjadi Objek
+        //class sepeda motor
+            SepedaMotor spdA = new SepedaMotor("Honda Vario", 2017);
+            SepedaMotor spbB = new SepedaMotor("Honda Beat",2020);
+
+            spdA.nyalakan();
+            spbB.nyalakan();
+
+            spdA.jalan();
+            spbB.jalan();
+
+        // class Mobil
+        Mobil mblA = new Mobil("Toyota Rush",2022,1496);
+        Mobil mblB = new Mobil("Mitsubishi Pajero", 2024,2477);
+
+        mblA.nyalakan();
+        mblB.nyalakan();
+
+        mblA.jalan();
+        mblB.jalan();
     }
 
     public static int tambah(int a, int b) {
